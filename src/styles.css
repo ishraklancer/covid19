@@ -1,0 +1,16 @@
+body {
+	background-color: snow;
+	font-family: monospace;
+	overflow-x: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-family: monospace;
+}
