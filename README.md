@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LIVE SITE https://covid19-tracker-bd.netlify.app/
 
 ## Available Scripts
 
