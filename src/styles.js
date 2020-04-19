@@ -22,15 +22,15 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: 25,
 	},
 	deaths: {
-		backgroundColor: "#d62222",
+		backgroundColor: "#f24646",
 		color: "white",
 	},
 	confirmed: {
-		backgroundColor: "#1e5cc7",
+		backgroundColor: "#09729c",
 		color: "white",
 	},
 	recovered: {
-		backgroundColor: "#22d622",
+		backgroundColor: "#2fc448",
 		color: "white",
 	},
 	totalInfected: {
