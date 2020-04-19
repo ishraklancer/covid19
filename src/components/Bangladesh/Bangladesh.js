@@ -102,7 +102,7 @@ const Bangladesh = (props) => {
 				<Grid item xs={4} component={Paper} className={classes.todayInfected}>
 					<Typography variant='caption'>
 						Cases Today:{" "}
-						{(data.todayCases && (
+						{(data.cases && (
 							<CountUp
 								start={0}
 								end={data.todayCases}
@@ -121,7 +121,7 @@ const Bangladesh = (props) => {
 				<Grid item xs={4} component={Paper} className={classes.todayDeaths}>
 					<Typography variant='caption'>
 						Deaths Today:{" "}
-						{(data.todayDeaths && (
+						{(data.cases && (
 							<CountUp
 								start={0}
 								end={data.todayDeaths}
