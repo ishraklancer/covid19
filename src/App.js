@@ -5,6 +5,7 @@ import Chart from "./components/Chart/Chart";
 import Country from "./components/Country/Country";
 import Bangladesh from "./components/Bangladesh/Bangladesh";
 import styles from "./styles.css";
+import virusIcon from "./virus2.svg";
 import { fetchData } from "./api";
 import useStyles from "./styles";
 
@@ -31,7 +32,8 @@ const App = () => {
 	return (
 		<div className='container'>
 			<Typography variant='h4' style={{ textAlign: "center" }}>
-				COVID-19 TRACKER 🦠
+				COVID-19 TRACKER{" "}
+				<img src={virusIcon} style={{ width: 40, height: 40 }} />
 			</Typography>
 			<Typography
 				style={{

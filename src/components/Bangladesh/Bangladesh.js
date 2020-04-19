@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import UseAnimations from "react-useanimations";
 import { fetchBangladeshData, fetchGlobalData } from "../../api";
+import BangladeshIcon from "../../bangladesh.png";
 
 const Bangladesh = (props) => {
 	const classes = useStyles();
@@ -38,7 +39,11 @@ const Bangladesh = (props) => {
 			>
 				<Grid item xs={12}>
 					<Typography style={{ textAlign: "center" }} variant='h6'>
-						🌷 Bangladesh Info
+						<img
+							src={BangladeshIcon}
+							style={{ bottom: -7, position: "relative" }}
+						/>{" "}
+						Bangladesh Info
 					</Typography>
 				</Grid>
 				<Grid item xs={4} component={Paper} className={classes.totalInfected}>
