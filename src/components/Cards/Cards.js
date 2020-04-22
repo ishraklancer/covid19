@@ -36,7 +36,7 @@ const Cards = () => {
 					xs={12}
 					justify='center'
 					style={{
-						paddingTop: window.innerWidth < 480 && 0,
+						paddingTop: 0,
 						paddingBottom: 4,
 					}}
 				>
