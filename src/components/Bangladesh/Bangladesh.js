@@ -107,14 +107,16 @@ const Bangladesh = (props) => {
 				<Grid item xs={4} component={Paper} className={classes.todayInfected}>
 					<Typography variant='caption'>
 						Cases Today:{" "}
-						{(data.cases && (
-							<CountUp
-								start={0}
-								end={data.todayCases}
-								duration={2}
-								separator={","}
-							/>
-						)) || (
+						{(data.cases &&
+							((data.todayCases > 0 && (
+								<CountUp
+									start={0}
+									end={data.todayCases}
+									duration={2}
+									separator={","}
+								/>
+							)) ||
+								"To be announced")) || (
 							<UseAnimations
 								animationKey='loading'
 								size={20}
@@ -126,14 +128,16 @@ const Bangladesh = (props) => {
 				<Grid item xs={4} component={Paper} className={classes.todayDeaths}>
 					<Typography variant='caption'>
 						Deaths Today:{" "}
-						{(data.cases && (
-							<CountUp
-								start={0}
-								end={data.todayDeaths}
-								duration={2}
-								separator={","}
-							/>
-						)) || (
+						{(data.cases &&
+							((data.todayDeaths > 0 && (
+								<CountUp
+									start={0}
+									end={data.todayDeaths}
+									duration={2}
+									separator={","}
+								/>
+							)) ||
+								"To be announced")) || (
 							<UseAnimations
 								animationKey='loading'
 								size={20}

@@ -30,29 +30,32 @@ const App = () => {
 	};
 
 	return (
-		<div className='container'>
-			<Typography variant='h4' style={{ textAlign: "center" }}>
-				COVID-19 TRACKER{" "}
-				<img src={virusIcon} style={{ width: 40, height: 40 }} />
-			</Typography>
+		<React.Fragment>
+			<div className='container'>
+				<Typography variant='h4' style={{ textAlign: "center" }}>
+					COVID-19 TRACKER{" "}
+					<img src={virusIcon} style={{ width: 40, height: 40 }} />
+				</Typography>
+				Last Updated {new Date(corona.lastUpdate).toLocaleString()}
+				<Cards />
+				<Bangladesh data={corona} />
+				<Typography variant='h6' style={{ textAlign: "center" }}>
+					🗺️Country Specific Charts
+				</Typography>
+				<Country handleCountryChange={handleCountryChange} />
+				<Chart data={countryData} country={country} />
+			</div>
+			<p></p>
 			<Typography
 				style={{
-					textAlign: "left",
+					textAlign: "right",
 					fontFamily: "monospace",
 				}}
-				variant='caption'
+				variant='body1'
 			>
 				Developed by Shadman Ishrak
 			</Typography>
-			Last Updated {new Date(corona.lastUpdate).toLocaleString()}
-			<Cards />
-			<Bangladesh data={corona} />
-			<Typography variant='h6' style={{ textAlign: "center" }}>
-				🗺️Country Specific Charts
-			</Typography>
-			<Country handleCountryChange={handleCountryChange} />
-			<Chart data={countryData} country={country} />
-		</div>
+		</React.Fragment>
 	);
 };
 
