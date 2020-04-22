@@ -43,7 +43,7 @@ const App = () => {
 					🗺️Country Specific Charts
 				</Typography>
 				<Country handleCountryChange={handleCountryChange} />
-				<Chart data={countryData} country={country} />
+				<Chart data={countryData} country={country} style={{ padding: 0 }} />
 			</div>
 			<p></p>
 			<Typography
@@ -51,7 +51,7 @@ const App = () => {
 					textAlign: "right",
 					fontFamily: "monospace",
 				}}
-				variant='body1'
+				variant='body2'
 			>
 				Developed by Shadman Ishrak
 			</Typography>
