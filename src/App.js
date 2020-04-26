@@ -32,11 +32,21 @@ const App = () => {
 	return (
 		<React.Fragment>
 			<div className='container'>
-				<Typography variant='h4' style={{ textAlign: "center" }}>
+				<Typography variant='h3' style={{ textAlign: "center" }}>
 					COVID-19 TRACKER{" "}
 					<img src={virusIcon} style={{ width: 40, height: 40 }} />
 				</Typography>
-				Last Updated {new Date(corona.lastUpdate).toLocaleString()}
+				<Typography
+					style={{
+						textAlign: "center",
+						fontFamily: "monospace",
+						fontWeight: "bold",
+					}}
+					variant='body2'
+				>
+					Developed by Shadman Ishrak
+				</Typography>
+				Info Last Updated {new Date(corona.lastUpdate).toLocaleString()}
 				<Cards />
 				<Bangladesh data={corona} />
 				<Typography variant='h6' style={{ textAlign: "center" }}>
@@ -46,15 +56,6 @@ const App = () => {
 				<Chart data={countryData} country={country} style={{ padding: 0 }} />
 			</div>
 			<p></p>
-			<Typography
-				style={{
-					textAlign: "right",
-					fontFamily: "monospace",
-				}}
-				variant='body2'
-			>
-				Developed by Shadman Ishrak
-			</Typography>
 		</React.Fragment>
 	);
 };
